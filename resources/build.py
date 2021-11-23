@@ -811,6 +811,13 @@ class BuildOpenCore:
         if self.constants.disable_connectdrivers is True:
             print("- Disabling ConnectDrivers")
             self.config["UEFI"]["ConnectDrivers"] = False
+        if self.model.startswith("MacBook"):
+            # Fix Virtual Machine support for non-macOS OSes
+            # MacBookPro11,x is affected, unsure what other models are affected
+            # TODO: FIX MODELS AFFECTED (Haswell?)
+            # TODO: Allow configurability to end user, enable by default for MacBookPro11,x via defaults.py
+            print("- Enabling 'EnableVmx' quirk!!!")
+            self.config["UEFI"]["Quirks"]["EnableVmx"] = True
         if self.get_item_by_kv(self.config["Kernel"]["Patch"], "Comment", "Reroute kern.hv_vmm_present patch (1)")["Enabled"] is True:
             # Add Content Caching patch
             print("- Fixing Content Caching support")
