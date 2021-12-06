@@ -59,6 +59,7 @@ To aid users in troubleshooting, we've compiled a list of users who've reported 
 | MacBookPro10,1 | ^^ | traviswparker | - Stock model <br/>- Patcher version 0.0.14 |
 | ^^ | ^^ | il-rollino | - Upgraded BCM94360CSAX <br/>- Patcher version 0.0.21 |
 | MacBookPro10,2 | ^^ | akidone | - Upgraded BCM94360CSAX <br/>- Patcher version 0.3.0 |
+| MacBookPro11,1 | ^^ | sukkamehu | - Stock model <br/>- Patcher version 0.3.1 |
 
 ### Mac mini
 
